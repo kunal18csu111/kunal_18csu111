@@ -4,9 +4,9 @@ class Box{
 	double hieght;
 	void setDim(double w , double h, double d)
 	{
-		width=w;
-		hieght=h;
-		depth=d;
+		this.width=w;
+		this.hieght=h;
+		this.depth=d;
 	}
 	double volume()
 	{
