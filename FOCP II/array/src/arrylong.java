@@ -1,20 +1,21 @@
-import java.util.*;
+import java.util.Scanner;
 class sumarry
 {
 
 
-	int sum(){
+	public static int sum(int [] arr){
+		int sum1=0;
 	for(int i=0;i<=n;i++)
 	{
-		sum=sum+arry[i];
+		sum1=sum1+arr[i];
 	}
-	System.out.println(sum);
-	return sum;
+	System.out.println(sum1);
+	return sum1;
 }
 }
-int largestnum()
+public int largestnum(int large)
 {
-	int large;
+	
 	arr[0]=large;
 	for(int i=0;i<5;i++)
 	{
@@ -27,9 +28,9 @@ int largestnum()
 	return large;
 
 }
-int smallnum()
+public int smallnum(int small)
 {
-	int small;
+	
 	arr[0]=small;
 	for(int i=0;i<5;i++)
 	{
@@ -41,9 +42,9 @@ int smallnum()
 	System.out.println("smallest number is"+small);
 	return small;
 }
-int secondnum()
+public int secondnum(int second)
 {
-	int second;
+	
 	arr[0]=second;
 	for(int i=0;i<5;i++)
 	{
@@ -60,17 +61,18 @@ int secondnum()
 
 
 }
-int sumalt()
+public int sumalt(int suma,sumb)
 {
-	int suma,sumb;
+	
 	suma=arr[0]+arr[2]+arr[4];
 	sumb=arr[1]+arr[3]+arr[5];
 	System.out.println("sum of alternate numbers 0,2,4="+suma+"sum of alternate numbers 1,3,5="+sumb);
 	return suma ,sumb;
 }
-int sumeven()
+public int sumeven(int sumev)
 {
-int sumev;
+
+
 for(int i=0;i<5;i++)
 {
 	if(arr[i]%2==0)
@@ -81,8 +83,7 @@ for(int i=0;i<5;i++)
 }
 System.out.println("sum of even numbers="+sumev);
 }
-class arrfun;
-{
+
 	public static void main(String args[])
 	{
 		Scanner values = new Scanner(System.in);
@@ -100,16 +101,20 @@ class arrfun;
 		int y=values.nextInt();
 		if(y==1)
 		{
-			System.out.println(sum());
+			sum(sum1);
 			
 		}
 		else if(y==2)
 		{
-			System.out.println(large());
+			sumarry largeobj = new sumarry();
+			largeobj.largestnum(large);
 			
 		}
 		else if(y==3) {
-			System.out.println(small());
+
+			sumarry smallobj = new sumarry();
+			smallobj.smallnum(small);
+			
 
 			
 		 
@@ -117,18 +122,23 @@ class arrfun;
 		}
 		else if(y==4)
 		{
-			System.out.println(second());
+			sumarry secondobj = new sumarry();
+			secondobj.secondnum(second);
+			
 			
 		}
 		else if(y==5)
 		{
-			System.out.println(suma(),sumb());
+			sumarry sumabobj = new sumarry();
+			sumabibj.sumalt(suma,sumb);
+			
 			
 		}
-		else(y==6)
+		else if(y==6)
 		{
-			System.out.println(sumev());
+			sumarry sumevobj = new sumarry();
+			sumevobj.sumeven(sumev);
+			
 			
 		}
 	}
-}
