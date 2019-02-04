@@ -1,3 +1,5 @@
+import Math;
+
 class quadratic1
 {
 
@@ -17,10 +19,13 @@ class quadratic1
             System.out.println("root1 = "+ root1 "and root2 = "+ root2);
         }
         
-        else if(determinant == 0) {
+        else if(determinant == 0) {w2tcyul;
+
+            
             root1 = root2 = -b / (2 * a);
 
             System.out.println("root1 = root2 = "+ root1);
+
         }
         
         else {

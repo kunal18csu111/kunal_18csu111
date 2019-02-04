@@ -2,6 +2,17 @@ class Box{
 	double width;
 	double depth;
 	double hieght;
+	Box()
+	{
+		this.width=0;
+	}
+	
+
+	Box(d
+	{
+		this.width=0;
+	}
+	}
 	void setDim(double w , double h, double d)
 	{
 		this.width=w;
